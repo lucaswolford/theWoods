@@ -126,10 +126,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 425782, guid: 31d288e9ad907484cb3a4051844681e6, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 31d288e9ad907484cb3a4051844681e6, type: 2}
   m_IsPrefabParent: 0
