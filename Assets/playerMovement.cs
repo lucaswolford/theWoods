@@ -23,5 +23,11 @@ public class playerMovement : MonoBehaviour {
 			body.AddForce( Vector2.right * acceleration );
 		}
 		body.velocity = Vector2.ClampMagnitude (body.velocity, maxSpeed);
+
+		if (Mathf.Abs (body.velocity.x) > 1)
+		{
+			float direction = body.velocity.x > 0 ? -1 : 1;
+			transform.localScale = new Vector3 (direction,1,1);
+		}
 	}
 }

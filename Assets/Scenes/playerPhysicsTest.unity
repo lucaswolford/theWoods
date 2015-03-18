@@ -87,23 +87,6 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &23651827
-GameObject:
-  m_PrefabParentObject: {fileID: 153680, guid: 31d288e9ad907484cb3a4051844681e6, type: 2}
-  m_PrefabInternal: {fileID: 345627963}
---- !u!114 &23651833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 23651827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cada3ae959a14aba8b7ca1fc81b28c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  acceleration: 25
-  maxSpeed: 5
 --- !u!1001 &345627963
 Prefab:
   m_ObjectHideFlags: 0
@@ -113,11 +96,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 425782, guid: 31d288e9ad907484cb3a4051844681e6, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.13999987
+      value: -3.58999991
       objectReference: {fileID: 0}
     - target: {fileID: 425782, guid: 31d288e9ad907484cb3a4051844681e6, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .829999983
+      value: -2.46000004
       objectReference: {fileID: 0}
     - target: {fileID: 425782, guid: 31d288e9ad907484cb3a4051844681e6, type: 2}
       propertyPath: m_LocalPosition.z
@@ -143,28 +126,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6163328, guid: 31d288e9ad907484cb3a4051844681e6, type: 2}
-      propertyPath: m_Size.x
-      value: 1.20000005
-      objectReference: {fileID: 0}
-    - target: {fileID: 6163328, guid: 31d288e9ad907484cb3a4051844681e6, type: 2}
-      propertyPath: m_Size.y
-      value: 1.70000005
-      objectReference: {fileID: 0}
-    - target: {fileID: 6163328, guid: 31d288e9ad907484cb3a4051844681e6, type: 2}
-      propertyPath: m_Offset.y
-      value: .400000006
-      objectReference: {fileID: 0}
-    - target: {fileID: 5861122, guid: 31d288e9ad907484cb3a4051844681e6, type: 2}
-      propertyPath: m_Offset.y
-      value: -.519999981
-      objectReference: {fileID: 0}
-    - target: {fileID: 5041712, guid: 31d288e9ad907484cb3a4051844681e6, type: 2}
-      propertyPath: m_LinearDrag
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5041712, guid: 31d288e9ad907484cb3a4051844681e6, type: 2}
-      propertyPath: m_GravityScale
+    - target: {fileID: 425782, guid: 31d288e9ad907484cb3a4051844681e6, type: 2}
+      propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
