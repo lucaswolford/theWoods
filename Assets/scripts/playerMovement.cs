@@ -5,6 +5,9 @@ public class playerMovement : MonoBehaviour {
 	private Rigidbody2D body;
 	public float acceleration;
 	public float maxSpeed;
+	public float xFlipSpeed = 1f; 
+
+	private int dirX = -1; // -1 left, 1 right; movement direction
 	private int inputMoveX = 0;
 
 	// Use this for initialization
@@ -40,8 +43,10 @@ public class playerMovement : MonoBehaviour {
 
 		if (Mathf.Abs (body.velocity.x) > 1)
 		{
-			float direction = body.velocity.x > 0 ? -1 : 1;
-			transform.localScale = new Vector3 (direction,1,1);
+			dirX = body.velocity.x > 0 ? -1 : 1;
 		}
+
+		float scaleXCur = transform.localScale.x + (Time.deltaTime * xFlipSpeed * dirX);
+		transform.localScale = new Vector3 (Mathf.Clamp(scaleXCur,-1,1),1,1);
 	}
 }

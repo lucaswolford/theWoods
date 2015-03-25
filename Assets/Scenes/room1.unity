@@ -3539,6 +3539,22 @@ Prefab:
       propertyPath: m_Offset.y
       value: -.150000006
       objectReference: {fileID: 0}
+    - target: {fileID: 425782, guid: 31d288e9ad907484cb3a4051844681e6, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5861122, guid: 31d288e9ad907484cb3a4051844681e6, type: 2}
+      propertyPath: m_Offset.x
+      value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6163328, guid: 31d288e9ad907484cb3a4051844681e6, type: 2}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11409518, guid: 31d288e9ad907484cb3a4051844681e6, type: 2}
+      propertyPath: xFlipSpeed
+      value: 4.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 31d288e9ad907484cb3a4051844681e6, type: 2}
   m_IsPrefabParent: 0
