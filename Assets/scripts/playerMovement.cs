@@ -5,6 +5,7 @@ public class playerMovement : MonoBehaviour {
 	private Rigidbody2D body;
 	public float acceleration;
 	public float maxSpeed;
+	private int inputMoveX = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -12,16 +13,29 @@ public class playerMovement : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () { }
+	void Update () {
 
+		if (Input.GetMouseButton (0)) { // this works for touching mobile thing too
+			if(Input.mousePosition.x > Screen.width * 0.5f){
+				inputMoveX = 1;	
+			}else{
+				inputMoveX = -1;
+			}
+		}else if (Input.GetKey (KeyCode.LeftArrow)) {
+			inputMoveX = -1;
+		} else if (Input.GetKey (KeyCode.RightArrow)) {
+			inputMoveX = 1;
+		} else {
+			inputMoveX = 0;
+		}
+	}
+	
 	// All Physics go here
 	void FixedUpdate () {
-		if (Input.GetKey(KeyCode.LeftArrow)) {
-			body.AddForce( Vector2.right * -acceleration );
+		if (inputMoveX != 0) {
+			body.AddForce (Vector2.right * acceleration * inputMoveX);
 		}
-		if (Input.GetKey(KeyCode.RightArrow)) {
-			body.AddForce( Vector2.right * acceleration );
-		}
+
 		body.velocity = Vector2.ClampMagnitude (body.velocity, maxSpeed);
 
 		if (Mathf.Abs (body.velocity.x) > 1)
