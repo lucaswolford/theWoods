@@ -9,10 +9,14 @@ public class playerMovement : MonoBehaviour {
 
 	private int dirX = -1; // -1 left, 1 right; movement direction
 	private int inputMoveX = 0;
+	private bool walking = false;
+
+	public Animator animator;
 
 	// Use this for initialization
 	void Start () {
 		body = GetComponent<Rigidbody2D> ();
+		animator = GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -31,6 +35,12 @@ public class playerMovement : MonoBehaviour {
 		} else {
 			inputMoveX = 0;
 		}
+
+		if (walking) {
+			animator.SetBool("Walking", true);
+		} else {
+			animator.SetBool("Walking", false);
+		}
 	}
 	
 	// All Physics go here
@@ -40,6 +50,12 @@ public class playerMovement : MonoBehaviour {
 		}
 
 		body.velocity = Vector2.ClampMagnitude (body.velocity, maxSpeed);
+
+		if (inputMoveX != 0) {
+			walking = true;
+		} else {
+			walking = false;
+		}
 
 		if (Mathf.Abs (body.velocity.x) > 1)
 		{
