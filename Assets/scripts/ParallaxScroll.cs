@@ -14,9 +14,8 @@ public class ParallaxScroll : MonoBehaviour {
 
 		var offsetX = cameraPosition.x / scrollSpeed;
 
-		Vector3 theOffset = new Vector3 (offsetX + originalX, 0, 0);
+		Vector3 theOffset = new Vector3 (offsetX + originalX, transform.position.y, transform.position.z);
 
 		transform.position = theOffset;
 	}
 }
-
