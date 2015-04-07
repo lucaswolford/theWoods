@@ -51,8 +51,9 @@ public class playerMovement : MonoBehaviour {
 
 		body.velocity = Vector2.ClampMagnitude (body.velocity, maxSpeed);
 
-		if (inputMoveX != 0) {
+		if (Mathf.Abs(body.velocity.x) > 0.1) {
 			walking = true;
+
 		} else {
 			walking = false;
 		}
