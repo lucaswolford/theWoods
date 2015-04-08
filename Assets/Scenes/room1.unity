@@ -2429,7 +2429,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 754602211}
   - 212: {fileID: 754602210}
-  - 114: {fileID: 754602212}
   m_Layer: 8
   m_Name: layer1-smoke
   m_TagString: Untagged
@@ -2475,17 +2474,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1243325279}
   m_RootOrder: 3
---- !u!114 &754602212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 754602209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9517f7a9e7634500a1a328fb5756342, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &776136075
 GameObject:
   m_ObjectHideFlags: 0
@@ -3563,6 +3551,46 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 19c829c182b534d3b8190c25924eaf34, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1480483176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1480483178}
+  - 114: {fileID: 1480483177}
+  m_Layer: 0
+  m_Name: scripts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1480483177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1480483176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3a889e70be5e45b49cecf64339a9231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcs: []
+--- !u!4 &1480483178
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1480483176}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.197900951, y: 1.8039608, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
 --- !u!1 &1499532260
 GameObject:
   m_ObjectHideFlags: 0
@@ -4158,9 +4186,10 @@ GameObject:
   - 4: {fileID: 1807053487}
   - 212: {fileID: 1807053486}
   - 95: {fileID: 1807053485}
+  - 114: {fileID: 1807053488}
   m_Layer: 9
-  m_Name: fox1-1
-  m_TagString: Untagged
+  m_Name: fox1
+  m_TagString: npc
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4220,6 +4249,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+--- !u!114 &1807053488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1807053484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 419897591126946298a7a32ff4c1bcf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: fox1
 --- !u!1 &1819539684
 GameObject:
   m_ObjectHideFlags: 0
