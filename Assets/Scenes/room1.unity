@@ -3124,7 +3124,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1126576306}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: -10}
+  m_LocalPosition: {x: 0, y: 1.76999998, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1125658548}
@@ -3901,7 +3901,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1569432890}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.5, y: 3.87999988, z: 0}
+  m_LocalPosition: {x: -4.5, y: 3.54999995, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1807053487}
@@ -4320,10 +4320,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1807053484}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 419897591126946298a7a32ff4c1bcf2, type: 3}
+  m_Script: {fileID: 11500000, guid: 0691a2f8a2ba34f92b75ab584a3f00e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  dialogRange: 5
 --- !u!1 &1819539684
 GameObject:
   m_ObjectHideFlags: 0

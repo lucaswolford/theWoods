@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class npc : MonoBehaviour {
+public class npcDialog : MonoBehaviour {
 
-	public GameObject player;
+	public int dialogRange;
+
+	private GameObject player;
 	private Transform dialog;
 
 	// Use this for initialization
@@ -18,7 +20,7 @@ public class npc : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
-		if (Mathf.Abs (transform.position.x - player.transform.position.x) < 7) {
+		if (Mathf.Abs (transform.position.x - player.transform.position.x) < dialogRange) {
 			dialog.localScale = new Vector3(0.5f, 0.5f, 1.0f);
 		} else {
 			dialog.localScale = new Vector3(0, 0, 0);
